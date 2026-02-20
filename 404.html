@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة غير موجودة - عيادة د. مختار الشرعبي</title>
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #004d40;
+            --secondary: #00796b;
+            --light: #e0f7fa;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', Tahoma, sans-serif; }
+        
+        body {
+            background: linear-gradient(120deg, #f0f9ff, #e0f7fa);
+            color: var(--primary);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            line-height: 1.8;
+        }
+        
+        .error-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 150, 136, 0.15);
+            text-align: center;
+            position: relative;
+        }
+        
+        .error-header {
+            background: var(--primary);
+            padding: 40px 20px;
+            color: white;
+        }
+        
+        .error-code { font-size: 8rem; font-weight: bold; line-height: 1; }
+        .error-title { font-size: 2.2rem; margin-top: 10px; }
+        .error-content { padding: 40px 30px; }
+        .error-message { font-size: 1.3rem; margin-bottom: 30px; color: #555; }
+        
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            background: var(--primary);
+            color: white;
+            padding: 14px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: 2px solid var(--primary);
+        }
+        .btn:hover {
+            background: white;
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 77, 64, 0.2);
+        }
+        .btn i { margin-left: 10px; }
+        
+        .search-box { max-width: 500px; margin: 30px auto; }
+        .search-form { display: flex; border: 2px solid #b2dfdb; border-radius: 50px; overflow: hidden; }
+        .search-input { flex: 1; padding: 15px 20px; border: none; font-size: 1rem; outline: none; }
+        .search-button { background: var(--secondary); color: white; border: none; padding: 0 25px; cursor: pointer; font-size: 1.1rem; }
+
+        .important-links { margin-top: 30px; }
+        .links-title { font-size: 1.2rem; margin-bottom: 15px; color: var(--primary); }
+        .links-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; max-width: 600px; margin: 0 auto; }
+        .link-item { background: #f5fbfa; padding: 15px; border-radius: 10px; transition: all 0.3s; }
+        .link-item:hover { background: var(--light); transform: translateY(-3px); }
+        .link-item a { color: var(--secondary); text-decoration: none; font-weight: 500; display: block; }
+
+        @media (max-width: 768px) {
+            .error-code { font-size: 5rem; }
+            .error-title { font-size: 1.8rem; }
+            .btn { padding: 12px 25px; font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-header">
+            <div class="error-code">404</div>
+            <h1 class="error-title">الصفحة غير موجودة</h1>
+        </div>
+        <div class="error-content">
+            <p class="error-message">
+                عذراً، الصفحة التي تبحث عنها غير متوفرة أو تم نقلها.<br>
+                يمكنك العودة للصفحة الرئيسية أو استخدام البحث أدناه.
+            </p>
+            
+            <div class="btn-group">
+                <a href="https://ent.drmsharabi.com/" class="btn"><i class="fas fa-home"></i> الصفحة الرئيسية</a>
+                <a href="https://ent.drmsharabi.com/contact" class="btn"><i class="fas fa-phone-alt"></i> تواصل معنا</a>
+            </div>
+            
+            <div class="search-box">
+                <form class="search-form" action="https://www.google.com/search" method="get">
+                    <input type="text" name="q" class="search-input" placeholder="ابحث في الموقع...">
+                    <input type="hidden" name="sitesearch" value="ent.drmsharabi.com">
+                    <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            
+            <div class="important-links">
+                <h3 class="links-title">روابط مهمة:</h3>
+                <div class="links-grid">
+                    <div class="link-item"><a href="https://ent.drmsharabi.com/about">عن العيادة</a></div>
+                    <div class="link-item"><a href="https://ent.drmsharabi.com/services">خدماتنا</a></div>
+                    <div class="link-item"><a href="https://ent.drmsharabi.com/gallery">معرض الصور</a></div>
+                    <div class="link-item"><a href="https://ent.drmsharabi.com/testimonials">آراء المرضى</a></div>
+                    <div class="link-item"><a href="https://ent.drmsharabi.com/blog">المدونة الطبية</a></div>
+                    <div class="link-item"><a href="https://ent.drmsharabi.com/contact">مواعيد العمل</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
